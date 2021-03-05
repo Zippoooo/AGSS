@@ -1,0 +1,167 @@
+{
+	"token": "",
+	"prefix": "!",
+	"interval": 30000,
+	"branding": {
+		"title": "GamingX CS:GO Servers",
+		"titleurl": "http://bans.gamingx.co.il",
+		"color": "#ffcc00",
+        "footer": "GamingX Servers",
+        "footerlogo": "https://images-ext-1.discordapp.net/external/uFqhhd2ZsyKG8PZAUnUzzXEd2esjNfD94hJBqIEW7Z4/https/i.imgur.com/VJTwTeB.png",
+		"thumbnail": "",
+		"image": "",
+		"header": true,
+		"headerimage": "https://i.imgur.com/0c2Wve0.png"
+	},
+	"categories": {
+		"Competitive": [
+			{
+				"ip": "185.185.134.29",
+				"port": 10001,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Retakes #1",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10001"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10002,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Retakes #2",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10002"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10003,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Retakes #3",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10003"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10004,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Retakes #4",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10004"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10008,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Retakes #5",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10008"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10009,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Retakes #6",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10009"
+			}
+		],
+		"Clubs": [
+			{
+				"ip": "185.185.134.29",
+				"port": 10006,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Jailbreak",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10006"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10007,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Surf Combat",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10007"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10011,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Only AWP",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10011"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10012,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Arena 1VS1",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10012"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10014,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Fun",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10014"
+			}
+		],
+		"PickUp": [
+			{
+				"ip": "185.185.134.29",
+				"port": 10030,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Pickup #1",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10030"
+			},
+			{
+				"ip": "185.185.134.29",
+				"port": 10031,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Pickup #2",
+				"url": "http://gamingx.co.il/play?ip=185.185.134.29:10031"
+			},
+			{
+				"ip": "194.87.183.141",
+				"port": 27015,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Pickup #1",
+				"url": "http://gamingx.co.il/play?ip=194.87.183.141:27015"
+			},
+			{
+				"ip": "194.87.183.141",
+				"port": 27016,
+				"game": "csgo",
+				"emoji": "<:csgo:817357678329856070>",
+				"name": "Pickup #2",
+				"url": "http://gamingx.co.il/play?ip=194.87.183.141:27016"
+			}
+		],
+		"FiveM": [
+			{
+				"ip": "185.185.134.28",
+				"port": 30120,
+				"game": "fivem",
+				"emoji": "<:fivem:817357678237843476>",
+				"name": "FiveM RP",
+				"url": "http://fivem.gamingx.co.il/",
+				"maxplayers": "48"
+			}
+		],
+		"Rust": [
+			{
+				"ip": "194.87.183.183",
+				"port": 28025,
+				"game": "rust",
+				"emoji": "<:fivem:817357678237843476>",
+				"name": "Rust",
+				"url": "http://rust.gamingx.co.il/"
+			}
+		]
+	},
+	"messageid": "817360513393754113",
+	"channelid": "805050313160917022"
+}
