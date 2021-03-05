@@ -6,6 +6,7 @@ const query = require("source-server-query");
 const fetch = require("node-fetch");
 const mcquery = require('minecraft-server-util');
 const fs = require("fs");
+const { players } = require("source-server-query");
 var branding = config.branding;
 /* Configuartion */
 chalk.gold = chalk.hex("fecd69").bold;
@@ -40,6 +41,7 @@ var globalTimer = setInterval(()=> {
         clearInterval(globalTimer)
     }
 }, 1000)
+
 async function main(type, message){
     let embed = new MessageEmbed()
     .setTitle(branding.title)
@@ -53,11 +55,9 @@ async function main(type, message){
         var list = [];
         for(var server of config.categories[category]){
             var data = await getGameInfo(server.ip, server.port, server.game)
-            if(server.game === "fivem") {
-                list.push(`**[${server.emoji}]** **${server.name}** [**Connect**](${server.url}) \`${data.length}/${server.maxplayers}\` **Players**`)
-            } else {
-                list.push(`**[${server.emoji}]** **${server.name}** [**Connect**](${server.url}) \`${data.playersnum}/${data.maxplayers}\` **Players**`)
-            }
+            var playersnum, maxplayers;
+            if(server.game === "fivem") { playersnum = data.length; maxplayers = server.maxplayers; } else if(server.game === "minecraft") { playersnum = data.onlinePlayers; maxplayers = data.maxPlayers; } else { playersnum = data.playersnum; maxplayers = data.maxplayers; } if(playersnum === undefined || maxplayers === undefined) { playersnum = "∞"; maxplayers = "∞" }
+            list.push(`**[${server.emoji}]** **${server.name}** [**Connect**](${server.url}) \`${playersnum}/${maxplayers}\` **Players**`)
         }
         embed.addField(`**__${category}__**`, list)
     }
@@ -82,9 +82,9 @@ async function main(type, message){
     }
 }
 /* Queries */
-    /* Source */ async function source(ip, port) { return query.info(ip, port, 2000) }
+    /* Source */ async function source(ip, port) { return query.info(ip, port, 1000) }
     /* FiveM */ async function fivem(ip, port) { return await fetch(`http://${ip}:${port}/players.json`, { timeout: 3000 }).then(res => res.json()); }
-    /* Minecraft */ async function mc(ip, port) { return await mcquery.status(ip, {port: port, timeout: 2000}) }
+    /* Minecraft */ async function mc(ip, port) { return await mcquery.status(ip, {port: port, timeout: 1000}) }
 /* Commands */
 client.on('message', async (message) => {
     const prefix = config.prefix
